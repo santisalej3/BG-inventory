@@ -1,0 +1,21 @@
+<div class="container">
+  <h2 class="title-entregar">Entregar inventario</h2>
+  <div *ngFor="let inventory of inventorys" class="inventory-item">
+    <h1 class="inventory-card-title">
+      {{ inventory.producto_asignado_nombre }}
+    </h1>
+    <p class="inventory-card-serie">
+      {{ inventory.numero_serie }}
+    </p>
+    <button
+      [disabled]="inventory.estado_entrega === 'Entregado'"
+      (click)="entregarProducto(inventory)"
+      [ngClass]="{
+        entregado: inventory.estado_entrega === 'Entregado',
+        entregar: inventory.estado_entrega !== 'Entregado'
+      }"
+    >
+      {{ inventory.estado_entrega === "Entregado" ? "Entregado" : "Entregar" }}
+    </button>
+  </div>
+</div>

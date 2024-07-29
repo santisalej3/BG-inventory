@@ -1,0 +1,61 @@
+
+.container {
+  background-color: #C2DBFE;
+  padding: 20px;
+  border-radius: 5px;
+  width: 700px; 
+  margin: 0 auto;
+}
+
+.container-form{
+  width: 100%;
+}
+
+.title-register {
+  text-align: center;
+  font-weight: 550;
+  font-size: 30px;
+}
+
+.form-control-user, .form-control-date, .form-control-products, .form-control-serie{
+  margin: 5px;
+  border-radius: 5px;
+  padding: 8px;
+  border-color: transparent;
+  margin: 10px 0 10px 0;
+}
+
+.form-control-user{
+  width: 97%;
+}
+
+.form-control-products{
+  width: 40%;
+  margin-right: 10px;
+  background: #6C757D;
+  text-align: center;
+  color: #fff;
+}
+
+.form-control-serie{
+  width: 55%;
+}
+.form-control-date{
+  width: 97%;
+  
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  width: 100%;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}

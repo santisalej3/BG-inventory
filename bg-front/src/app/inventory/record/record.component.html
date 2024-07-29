@@ -1,0 +1,38 @@
+<div class="container">
+  <h2 class="title-register">Registro de inventario</h2>
+  <form class="container-form" #form="ngForm" (ngSubmit)="onSubmit(form)">
+    <input
+      type="text"
+      name="nombreUsuario"
+      ngModel
+      placeholder="Nombre de usuario"
+      class="form-control-user"
+      required
+    />
+    <select name="producto" ngModel class="form-control-products" required>
+      <option value="" disabled selected>Productos</option>
+      <option *ngFor="let producto of productos" [value]="producto.id">
+        {{ producto.tipo_producto }}
+      </option>
+    </select>
+
+    <input
+      type="text"
+      name="numeroSerie"
+      ngModel
+      placeholder="Número de serie"
+      class="form-control-serie"
+      required
+    />
+
+    <input
+      type="date"
+      name="fechaCreacion"
+      ngModel
+      class="form-control-date"
+      required
+    />
+
+    <button type="submit" class="btn btn-primary">Guardar y enviar</button>
+  </form>
+</div>

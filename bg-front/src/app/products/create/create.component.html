@@ -1,0 +1,15 @@
+<form [formGroup]="productForm" (ngSubmit)="onSubmit()">
+  <div>
+    <label for="tipo_producto">Tipo de Producto</label>
+    <input id="tipo_producto" formControlName="tipo_producto" type="text" />
+  </div>
+  <div>
+    <label for="fecha_ultima_modificacion">Fecha de Última Modificación</label>
+    <input
+      id="fecha_ultima_modificacion"
+      formControlName="fecha_ultima_modificacion"
+      type="date"
+    />
+  </div>
+  <button type="submit" [disabled]="productForm.invalid">Crear Producto</button>
+</form>

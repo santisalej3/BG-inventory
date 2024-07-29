@@ -1,0 +1,24 @@
+<div style="display: flex">
+  <nav style="width: 200px; background: #f4f4f4; padding: 15px; height: 100%">
+    <ul style="list-style: none; padding: 0">
+      <li>
+        <a routerLink="/registro-inventario" routerLinkActive="active"
+          >Registro de Inventario</a
+        >
+      </li>
+      <li>
+        <a routerLink="/entregar-inventario" routerLinkActive="active"
+          >Entregar Inventario</a
+        >
+      </li>
+      <li>
+        <a routerLink="/create-product" routerLinkActive="active"
+          >Crear Producto</a
+        >
+      </li>
+    </ul>
+  </nav>
+  <main style="flex: 1; padding: 15px">
+    <router-outlet></router-outlet>
+  </main>
+</div>

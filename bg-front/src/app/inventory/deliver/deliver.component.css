@@ -1,0 +1,54 @@
+.container {
+  background-color: #C2DBFE;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 700px;
+}
+
+.title-entregar {
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: 550;
+  font-size: 30px;
+}
+
+.inventory-item {
+  margin-top: 15px;
+  margin-bottom: 20px;
+  background: #fff;
+  border-radius: 8px;
+}
+
+.inventory-item:last-child {
+  margin-bottom: 0;
+}
+
+.inventory-card-title {
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.inventory-card-serie {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+button {
+  padding: 10px;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  color: white;
+}
+
+button.entregar {
+  background-color: #007BFF;
+}
+
+button.entregado {
+  background-color: #28A745;
+}
